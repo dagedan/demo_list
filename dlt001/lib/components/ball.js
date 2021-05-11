@@ -1,9 +1,13 @@
 import React from 'react';
 import {StyleSheet, View, Text, Platform} from 'react-native';
 
-const Ball = ({num, type}) => {
+const Ball = ({num, type, color = '#aaaaaa'}) => {
+  const style = {
+    backgroundColor: color,
+    borderColor: color,
+  };
   return (
-    <View style={[styles.redball, type !== 'red' && styles.buleball]}>
+    <View style={[styles.redball, style]}>
       <Text style={styles.num}>{num}</Text>
     </View>
   );
@@ -14,10 +18,8 @@ const styles = StyleSheet.create({
     width: 30,
     height: 30,
     borderStyle: 'solid',
-    borderColor: 'red',
     borderRadius: 30,
     borderWidth: 1,
-    backgroundColor: 'red',
     overflow: 'hidden',
     marginLeft: 10,
     display: 'flex',

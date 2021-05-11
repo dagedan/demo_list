@@ -26,11 +26,11 @@ export const calcLotteryMoney = (myNum, lotteryNum) => {
   const redNumBingo = _.difference(
     myNum.split(' ').slice(0, 5),
     lotteryNum.split(' ').slice(0, 5),
-  );
+  ).length;
   const blueNumBingo = _.difference(
     myNum.split(' ').slice(5, 7),
     lotteryNum.split(' ').slice(5, 7),
-  );
+  ).length;
   if (
     (redNumBingo === 2 && blueNumBingo === 1) ||
     (redNumBingo === 3 && blueNumBingo === 0) ||
@@ -93,4 +93,8 @@ export const calcLotteryMoney = (myNum, lotteryNum) => {
       money: '中了一等大奖',
     };
   }
+  return {
+    level: '未中奖',
+    money: 0,
+  };
 };

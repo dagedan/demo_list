@@ -24,11 +24,11 @@ const Item = ({item, onPress, style}) => {
       <View style={styles.ballContainer}>
         <View style={styles.tag}>{icon.no('black')}</View>
         {red.map(i => {
-          return <Ball key={i} num={i} type={'red'} />;
+          return <Ball key={i} num={i} type={'red'} color={'red'} />;
         })}
         <View style={{flex: 1}}></View>
         {blue.map(i => {
-          return <Ball key={i} num={i} />;
+          return <Ball key={i} num={i} color={'blue'} />;
         })}
         <View style={{flex: 1}}></View>
       </View>
