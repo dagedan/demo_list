@@ -1,0 +1,252 @@
+[2021-05-16 16:17:29 +0800] [52760] [INFO] Starting gunicorn 20.1.0
+[2021-05-16 16:17:29 +0800] [52760] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2021-05-16 16:17:29 +0800] [52760] [ERROR] Retrying in 1 second.
+[2021-05-16 16:17:30 +0800] [52760] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2021-05-16 16:17:30 +0800] [52760] [ERROR] Retrying in 1 second.
+[2021-05-16 16:17:31 +0800] [52760] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2021-05-16 16:17:31 +0800] [52760] [ERROR] Retrying in 1 second.
+[2021-05-16 16:17:32 +0800] [52760] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2021-05-16 16:17:32 +0800] [52760] [ERROR] Retrying in 1 second.
+[2021-05-16 16:17:33 +0800] [52760] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2021-05-16 16:17:33 +0800] [52760] [ERROR] Retrying in 1 second.
+[2021-05-16 16:17:34 +0800] [52760] [ERROR] Can't connect to ('0.0.0.0', 80)
+[2021-05-16 16:21:46 +0800] [53801] [INFO] Starting gunicorn 20.1.0
+[2021-05-16 16:21:46 +0800] [53801] [INFO] Listening at: http://0.0.0.0:80 (53801)
+[2021-05-16 16:21:46 +0800] [53801] [INFO] Using worker: gevent
+[2021-05-16 16:21:46 +0800] [53803] [INFO] Booting worker with pid: 53803
+[2021-05-16 16:21:46 +0800] [53806] [INFO] Booting worker with pid: 53806
+[2021-05-16 16:21:46 +0800] [53807] [INFO] Booting worker with pid: 53807
+[2021-05-16 16:21:46 +0800] [53808] [INFO] Booting worker with pid: 53808
+[2021-05-16 16:21:46 +0800] [53809] [INFO] Booting worker with pid: 53809
+[2021-05-16 16:22:37 +0800] [53801] [INFO] Handling signal: winch
+[2021-05-16 16:22:37 +0800] [53801] [INFO] Handling signal: winch
+[2021-05-16 16:23:37 +0800] [53801] [INFO] Handling signal: term
+[2021-05-16 16:23:37 +0800] [53808] [INFO] Worker exiting (pid: 53808)
+[2021-05-16 16:23:37 +0800] [53809] [INFO] Worker exiting (pid: 53809)
+[2021-05-16 16:23:38 +0800] [53803] [INFO] Worker exiting (pid: 53803)
+[2021-05-16 16:23:38 +0800] [53806] [INFO] Worker exiting (pid: 53806)
+[2021-05-16 16:23:38 +0800] [53807] [INFO] Worker exiting (pid: 53807)
+[2021-05-16 16:23:38 +0800] [53801] [INFO] Shutting down: Master
+[2021-05-16 16:31:52 +0800] [54121] [INFO] Starting gunicorn 20.1.0
+[2021-05-16 16:31:52 +0800] [54121] [INFO] Listening at: http://0.0.0.0:80 (54121)
+[2021-05-16 16:31:52 +0800] [54121] [INFO] Using worker: gevent
+[2021-05-16 16:31:52 +0800] [54125] [INFO] Booting worker with pid: 54125
+[2021-05-16 16:31:52 +0800] [54126] [INFO] Booting worker with pid: 54126
+[2021-05-16 16:31:52 +0800] [54127] [INFO] Booting worker with pid: 54127
+[2021-05-16 16:31:52 +0800] [54128] [INFO] Booting worker with pid: 54128
+[2021-05-16 16:31:52 +0800] [54129] [INFO] Booting worker with pid: 54129
+[2021-05-16 16:31:57 +0800] [54121] [INFO] Handling signal: winch
+[2021-05-16 16:31:58 +0800] [54121] [INFO] Handling signal: winch
+[2021-05-16 16:32:58 +0800] [54121] [WARNING] Worker with pid 54127 was terminated due to signal 9
+[2021-05-16 16:32:58 +0800] [54156] [INFO] Booting worker with pid: 54156
+[2021-05-16 16:32:58 +0800] [54121] [WARNING] Worker with pid 54125 was terminated due to signal 9
+[2021-05-16 16:32:58 +0800] [54121] [WARNING] Worker with pid 54128 was terminated due to signal 9
+[2021-05-16 16:32:58 +0800] [54121] [WARNING] Worker with pid 54129 was terminated due to signal 9
+[2021-05-16 16:32:58 +0800] [54121] [WARNING] Worker with pid 54126 was terminated due to signal 9
+[2021-05-16 16:32:58 +0800] [54156] [INFO] Parent changed, shutting down: <Worker 54156>
+[2021-05-16 16:32:58 +0800] [54156] [INFO] Worker exiting (pid: 54156)
+[2021-05-16 16:45:37 +0800] [54523] [INFO] Starting gunicorn 20.1.0
+[2021-05-16 16:45:37 +0800] [54523] [INFO] Listening at: http://0.0.0.0:80 (54523)
+[2021-05-16 16:45:37 +0800] [54523] [INFO] Using worker: gevent
+[2021-05-16 16:45:37 +0800] [54527] [INFO] Booting worker with pid: 54527
+[2021-05-16 16:45:37 +0800] [54528] [INFO] Booting worker with pid: 54528
+[2021-05-16 16:45:37 +0800] [54529] [INFO] Booting worker with pid: 54529
+[2021-05-16 16:45:37 +0800] [54530] [INFO] Booting worker with pid: 54530
+[2021-05-16 16:45:37 +0800] [54531] [INFO] Booting worker with pid: 54531
+[2021-05-16 17:29:47 +0800] [54523] [INFO] Handling signal: term
+[2021-05-16 17:29:47 +0800] [54529] [INFO] Worker exiting (pid: 54529)
+[2021-05-16 17:29:47 +0800] [54530] [INFO] Worker exiting (pid: 54530)
+[2021-05-16 17:29:47 +0800] [54527] [INFO] Worker exiting (pid: 54527)
+[2021-05-16 17:29:47 +0800] [54528] [INFO] Worker exiting (pid: 54528)
+[2021-05-16 17:29:47 +0800] [54531] [INFO] Worker exiting (pid: 54531)
+[2021-05-16 17:29:47 +0800] [54523] [INFO] Shutting down: Master
+[2021-05-16 20:22:16 +0800] [61925] [INFO] Starting gunicorn 20.1.0
+[2021-05-16 20:22:16 +0800] [61925] [INFO] Listening at: http://0.0.0.0:80 (61925)
+[2021-05-16 20:22:16 +0800] [61925] [INFO] Using worker: sync
+[2021-05-16 20:22:16 +0800] [61929] [INFO] Booting worker with pid: 61929
+[2021-05-16 20:22:16 +0800] [61930] [INFO] Booting worker with pid: 61930
+[2021-05-16 20:22:16 +0800] [61931] [INFO] Booting worker with pid: 61931
+[2021-05-16 20:22:16 +0800] [61932] [INFO] Booting worker with pid: 61932
+[2021-05-16 20:22:16 +0800] [61933] [INFO] Booting worker with pid: 61933
+[2021-05-16 20:23:16 +0800] [61925] [CRITICAL] WORKER TIMEOUT (pid:61933)
+[2021-05-16 20:23:16 +0800] [61933] [INFO] Worker exiting (pid: 61933)
+[2021-05-16 20:23:16 +0800] [61961] [INFO] Booting worker with pid: 61961
+[2021-05-16 20:23:35 +0800] [61925] [CRITICAL] WORKER TIMEOUT (pid:61929)
+[2021-05-16 20:23:35 +0800] [61929] [INFO] Worker exiting (pid: 61929)
+[2021-05-16 20:23:36 +0800] [62276] [INFO] Booting worker with pid: 62276
+[2021-05-16 20:23:39 +0800] [61925] [INFO] Handling signal: term
+[2021-05-16 20:23:39 +0800] [61931] [INFO] Worker exiting (pid: 61931)
+[2021-05-16 20:23:39 +0800] [61930] [INFO] Worker exiting (pid: 61930)
+[2021-05-16 20:23:39 +0800] [62276] [INFO] Worker exiting (pid: 62276)
+[2021-05-16 20:23:39 +0800] [61932] [INFO] Worker exiting (pid: 61932)
+[2021-05-16 20:23:39 +0800] [61925] [WARNING] Worker with pid 61932 was terminated due to signal 15
+[2021-05-16 20:23:39 +0800] [61925] [WARNING] Worker with pid 61930 was terminated due to signal 15
+[2021-05-16 20:23:39 +0800] [61925] [WARNING] Worker with pid 61931 was terminated due to signal 15
+[2021-05-16 20:23:49 +0800] [61961] [INFO] Worker exiting (pid: 61961)
+[2021-05-16 20:23:49 +0800] [61925] [INFO] Shutting down: Master
+[2021-05-16 20:26:29 +0800] [62374] [INFO] Starting gunicorn 20.1.0
+[2021-05-16 20:26:29 +0800] [62374] [INFO] Listening at: http://0.0.0.0:80 (62374)
+[2021-05-16 20:26:29 +0800] [62374] [INFO] Using worker: sync
+[2021-05-16 20:26:29 +0800] [62376] [INFO] Booting worker with pid: 62376
+[2021-05-16 20:26:29 +0800] [62377] [INFO] Booting worker with pid: 62377
+[2021-05-16 20:26:29 +0800] [62378] [INFO] Booting worker with pid: 62378
+[2021-05-16 20:26:29 +0800] [62379] [INFO] Booting worker with pid: 62379
+[2021-05-16 20:26:29 +0800] [62382] [INFO] Booting worker with pid: 62382
+[2021-05-16 20:26:59 +0800] [62374] [INFO] Handling signal: term
+[2021-05-16 20:26:59 +0800] [62378] [INFO] Worker exiting (pid: 62378)
+[2021-05-16 20:26:59 +0800] [62382] [INFO] Worker exiting (pid: 62382)
+[2021-05-16 20:26:59 +0800] [62377] [INFO] Worker exiting (pid: 62377)
+[2021-05-16 20:26:59 +0800] [62379] [INFO] Worker exiting (pid: 62379)
+[2021-05-16 20:26:59 +0800] [62376] [INFO] Worker exiting (pid: 62376)
+[2021-05-16 20:26:59 +0800] [62374] [WARNING] Worker with pid 62379 was terminated due to signal 15
+[2021-05-16 20:26:59 +0800] [62374] [WARNING] Worker with pid 62376 was terminated due to signal 15
+[2021-05-16 20:26:59 +0800] [62374] [WARNING] Worker with pid 62377 was terminated due to signal 15
+[2021-05-16 20:26:59 +0800] [62374] [WARNING] Worker with pid 62382 was terminated due to signal 15
+[2021-05-16 20:26:59 +0800] [62374] [WARNING] Worker with pid 62378 was terminated due to signal 15
+[2021-05-16 20:26:59 +0800] [62374] [INFO] Shutting down: Master
+[2021-05-16 20:27:08 +0800] [62403] [INFO] Starting gunicorn 20.1.0
+[2021-05-16 20:27:08 +0800] [62403] [INFO] Listening at: http://0.0.0.0:5000 (62403)
+[2021-05-16 20:27:08 +0800] [62403] [INFO] Using worker: gevent
+[2021-05-16 20:27:08 +0800] [62405] [INFO] Booting worker with pid: 62405
+[2021-05-16 20:27:08 +0800] [62406] [INFO] Booting worker with pid: 62406
+[2021-05-16 20:27:08 +0800] [62407] [INFO] Booting worker with pid: 62407
+[2021-05-16 20:27:08 +0800] [62408] [INFO] Booting worker with pid: 62408
+[2021-05-16 20:27:08 +0800] [62411] [INFO] Booting worker with pid: 62411
+[2021-05-16 20:27:50,388] ERROR in app: Exception on /get_history_data_by_page [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dagongzai/Documents/space/py/test/app.py", line 83, in get_history_data_by_page
+    mongo_auth.authenticate('admin', 'iflve.com')
+  File "/usr/local/lib/python3.8/site-packages/pymongo/database.py", line 1492, in authenticate
+    self.client._cache_credentials(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 775, in _cache_credentials
+    server = self._get_topology().select_server(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/topology.py", line 241, in select_server
+    return random.choice(self.select_servers(selector,
+  File "/usr/local/lib/python3.8/site-packages/pymongo/topology.py", line 199, in select_servers
+    server_descriptions = self._select_servers_loop(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: 47.98.118.82:27017: [Errno 61] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 60a10fa747eeee3477f02d76, topology_type: Single, servers: [<ServerDescription ('47.98.118.82', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('47.98.118.82:27017: [Errno 61] Connection refused')>]>
+[2021-05-16 20:29:58,990] ERROR in app: Exception on /get_history_data_by_page [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dagongzai/Documents/space/py/test/app.py", line 83, in get_history_data_by_page
+    mongo_auth.authenticate('admin', 'iflve.com')
+  File "/usr/local/lib/python3.8/site-packages/pymongo/database.py", line 1492, in authenticate
+    self.client._cache_credentials(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 775, in _cache_credentials
+    server = self._get_topology().select_server(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/topology.py", line 241, in select_server
+    return random.choice(self.select_servers(selector,
+  File "/usr/local/lib/python3.8/site-packages/pymongo/topology.py", line 199, in select_servers
+    server_descriptions = self._select_servers_loop(
+  File "/usr/local/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: 47.98.118.82:27017: [Errno 51] Network is unreachable, Timeout: 30s, Topology Description: <TopologyDescription id: 60a1102821c3f5618afa9ca1, topology_type: Single, servers: [<ServerDescription ('47.98.118.82', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('47.98.118.82:27017: [Errno 51] Network is unreachable')>]>
+[2021-05-17 01:07:25 +0800] [62403] [CRITICAL] WORKER TIMEOUT (pid:62405)
+[2021-05-17 01:07:26 +0800] [62405] [INFO] Worker exiting (pid: 62405)
+[2021-05-17 01:07:26 +0800] [66582] [INFO] Booting worker with pid: 66582
+[2021-05-17 03:07:33 +0800] [62403] [CRITICAL] WORKER TIMEOUT (pid:62406)
+[2021-05-17 03:07:33 +0800] [62406] [INFO] Worker exiting (pid: 62406)
+[2021-05-17 03:07:34 +0800] [66586] [INFO] Booting worker with pid: 66586
+[2021-05-17 05:07:41 +0800] [62403] [CRITICAL] WORKER TIMEOUT (pid:62407)
+[2021-05-17 05:07:41 +0800] [62407] [INFO] Worker exiting (pid: 62407)
+[2021-05-17 05:07:41 +0800] [66602] [INFO] Booting worker with pid: 66602
+[2021-05-17 06:45:02 +0800] [62403] [CRITICAL] WORKER TIMEOUT (pid:66602)
+[2021-05-17 06:45:02 +0800] [66602] [INFO] Worker exiting (pid: 66602)
+[2021-05-17 06:45:02 +0800] [66613] [INFO] Booting worker with pid: 66613
+[2021-05-17 08:16:07 +0800] [62403] [CRITICAL] WORKER TIMEOUT (pid:62408)
+[2021-05-17 08:16:08 +0800] [62408] [INFO] Worker exiting (pid: 62408)
+[2021-05-17 08:16:09 +0800] [66619] [INFO] Booting worker with pid: 66619
+[2021-05-17 08:20:15 +0800] [62403] [INFO] Handling signal: int
+[2021-05-17 08:20:15 +0800] [66619] [INFO] Worker exiting (pid: 66619)
+[2021-05-17 08:20:15 +0800] [66613] [INFO] Worker exiting (pid: 66613)
+[2021-05-17 08:20:15 +0800] [66586] [INFO] Worker exiting (pid: 66586)
+[2021-05-17 08:20:15 +0800] [62411] [INFO] Worker exiting (pid: 62411)
+[2021-05-17 08:20:15 +0800] [66582] [INFO] Worker exiting (pid: 66582)
+[2021-05-17 08:20:16 +0800] [62403] [INFO] Shutting down: Master
+[2021-05-17 08:20:30 +0800] [66907] [INFO] Starting gunicorn 20.1.0
+[2021-05-17 08:20:30 +0800] [66907] [INFO] Listening at: http://0.0.0.0:5000 (66907)
+[2021-05-17 08:20:30 +0800] [66907] [INFO] Using worker: gevent
+[2021-05-17 08:20:30 +0800] [66911] [INFO] Booting worker with pid: 66911
+[2021-05-17 08:20:30 +0800] [66912] [INFO] Booting worker with pid: 66912
+[2021-05-17 08:20:30 +0800] [66913] [INFO] Booting worker with pid: 66913
+[2021-05-17 08:20:30 +0800] [66914] [INFO] Booting worker with pid: 66914
+[2021-05-17 08:20:30 +0800] [66915] [INFO] Booting worker with pid: 66915
+[2021-05-17 09:00:27 +0800] [66907] [WARNING] Worker with pid 66913 was terminated due to signal 9
+[2021-05-17 09:00:27 +0800] [67978] [INFO] Booting worker with pid: 67978
+[2021-05-17 09:00:27 +0800] [66907] [WARNING] Worker with pid 66912 was terminated due to signal 9
+[2021-05-17 09:00:27 +0800] [66907] [WARNING] Worker with pid 66915 was terminated due to signal 9
+[2021-05-17 09:00:27 +0800] [66907] [WARNING] Worker with pid 66911 was terminated due to signal 9
+[2021-05-17 09:00:27 +0800] [67978] [INFO] Parent changed, shutting down: <Worker 67978>
+[2021-05-17 09:00:27 +0800] [67978] [INFO] Worker exiting (pid: 67978)
+[2021-05-17 09:01:11 +0800] [68011] [INFO] Starting gunicorn 20.1.0
+[2021-05-17 09:01:11 +0800] [68011] [INFO] Listening at: http://0.0.0.0:5000 (68011)
+[2021-05-17 09:01:11 +0800] [68011] [INFO] Using worker: gevent
+[2021-05-17 09:01:11 +0800] [68015] [INFO] Booting worker with pid: 68015
+[2021-05-17 09:01:11 +0800] [68016] [INFO] Booting worker with pid: 68016
+[2021-05-17 09:01:11 +0800] [68017] [INFO] Booting worker with pid: 68017
+[2021-05-17 09:01:11 +0800] [68018] [INFO] Booting worker with pid: 68018
+[2021-05-17 09:01:11 +0800] [68019] [INFO] Booting worker with pid: 68019
+[2021-05-17 09:01:16 +0800] [68011] [INFO] Handling signal: winch
+[2021-05-17 09:01:37 +0800] [68011] [INFO] Handling signal: term
+[2021-05-17 09:01:37 +0800] [68017] [INFO] Worker exiting (pid: 68017)
+[2021-05-17 09:01:37 +0800] [68015] [INFO] Worker exiting (pid: 68015)
+[2021-05-17 09:01:37 +0800] [68016] [INFO] Worker exiting (pid: 68016)
+[2021-05-17 09:01:37 +0800] [68018] [INFO] Worker exiting (pid: 68018)
+[2021-05-17 09:01:37 +0800] [68019] [INFO] Worker exiting (pid: 68019)
+[2021-05-17 09:01:37 +0800] [68011] [INFO] Shutting down: Master
+[2021-05-17 09:01:50 +0800] [68038] [INFO] Starting gunicorn 20.1.0
+[2021-05-17 09:01:50 +0800] [68038] [INFO] Listening at: http://0.0.0.0:5000 (68038)
+[2021-05-17 09:01:50 +0800] [68038] [INFO] Using worker: gevent
+[2021-05-17 09:01:50 +0800] [68040] [INFO] Booting worker with pid: 68040
+[2021-05-17 09:01:50 +0800] [68041] [INFO] Booting worker with pid: 68041
+[2021-05-17 09:01:50 +0800] [68042] [INFO] Booting worker with pid: 68042
+[2021-05-17 09:01:50 +0800] [68045] [INFO] Booting worker with pid: 68045
+[2021-05-17 09:01:50 +0800] [68046] [INFO] Booting worker with pid: 68046
+[2021-05-17 09:04:37 +0800] [68038] [INFO] Handling signal: int
+[2021-05-17 09:04:37 +0800] [68042] [INFO] Worker exiting (pid: 68042)
+[2021-05-17 09:04:37 +0800] [68045] [INFO] Worker exiting (pid: 68045)
+[2021-05-17 09:04:37 +0800] [68046] [INFO] Worker exiting (pid: 68046)
+[2021-05-17 09:04:37 +0800] [68041] [INFO] Worker exiting (pid: 68041)
+[2021-05-17 09:04:37 +0800] [68040] [INFO] Worker exiting (pid: 68040)
+[2021-05-17 09:04:37 +0800] [68038] [INFO] Shutting down: Master
+[2021-05-17 09:04:39 +0800] [68115] [INFO] Starting gunicorn 20.1.0
+[2021-05-17 09:04:39 +0800] [68115] [INFO] Listening at: http://0.0.0.0:5000 (68115)
+[2021-05-17 09:04:39 +0800] [68115] [INFO] Using worker: sync
+[2021-05-17 09:04:39 +0800] [68120] [INFO] Booting worker with pid: 68120
+[2021-05-17 09:04:39 +0800] [68121] [INFO] Booting worker with pid: 68121
+[2021-05-17 09:04:39 +0800] [68122] [INFO] Booting worker with pid: 68122
+[2021-05-17 09:04:39 +0800] [68125] [INFO] Booting worker with pid: 68125
+[2021-05-17 09:04:39 +0800] [68126] [INFO] Booting worker with pid: 68126
+[2021-05-17 10:11:23 +0800] [68115] [WARNING] Worker with pid 68120 was terminated due to signal 9
+[2021-05-17 10:11:23 +0800] [69588] [INFO] Booting worker with pid: 69588
+[2021-05-17 10:11:23 +0800] [68115] [WARNING] Worker with pid 68125 was terminated due to signal 9
+[2021-05-17 10:11:23 +0800] [68115] [WARNING] Worker with pid 68121 was terminated due to signal 9
+[2021-05-17 10:11:23 +0800] [68115] [WARNING] Worker with pid 68126 was terminated due to signal 9
+[2021-05-17 10:11:23 +0800] [68115] [WARNING] Worker with pid 68122 was terminated due to signal 9
+[2021-05-17 10:11:24 +0800] [69588] [INFO] Parent changed, shutting down: <Worker 69588>
+[2021-05-17 10:11:24 +0800] [69588] [INFO] Worker exiting (pid: 69588)

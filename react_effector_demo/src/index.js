@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './views/App';
+// import Gate from './views/Gate';
+// import UIloading from './views/UIloading';
+// import EffectorSquence from './views/EffectorSquence';
 import reportWebVitals from './reportWebVitals';
 import './mock'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App></App>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,25 +1,18 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Button} from '@ant-design/react-native';
 import {StyleSheet, View, ScrollView} from 'react-native';
+import {useStore} from 'effector-react';
+import {allPeriod} from './waitDataStore';
 
 export default function SelectPeriod({navigation}) {
-  const [dataList, setDataList] = useState([]);
-  useEffect(() => {
-    let data = []
-    let date = new Date();
-    const firstPeriod = parseInt(date.getFullYear().toString().substr(2, 2) + '001');
-    for(let i = firstPeriod; i<firstPeriod+156; i++) {
-      data.push(i)
-    }
-    setDataList(data)
-  }, [])
+  const periods = useStore(allPeriod);
   const onPress = val => {
-    navigation.replace('planAdd', {'period': val});
-  }
+    navigation.replace('planAdd', {period: val});
+  };
   return (
     <ScrollView>
       <View style={styles.wrapper}>
-        {dataList.map(i => {
+        {periods.map(i => {
           return (
             <Button key={i} style={styles.btnItem} onPress={() => onPress(i)}>
               {i}

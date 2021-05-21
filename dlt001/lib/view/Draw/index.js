@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import {RefreshControl, DeviceEventEmitter} from 'react-native';
+import {changeCurrentPeriod} from './drawDataStore';
 import Ball from '../../components/ball';
 import {
   FlatList,
@@ -18,31 +20,31 @@ const Item = ({item, onPress, style}) => {
     <TouchableOpacity onPress={onPress} style={[styles.item, style]}>
       <View style={styles.top}>
         <Text>{item.lotteryDrawNum}期</Text>
-        <View style={{flex: 1}}></View>
+        <View style={{flex: 1}} />
         <Text>{item.lotteryDrawTime}</Text>
       </View>
       <View style={styles.ballContainer}>
-        <View style={styles.tag}>{icon.no('black')}</View>
+        {/* <View style={styles.tag}>{icon.no('black')}</View> */}
         {red.map(i => {
           return <Ball key={i} num={i} type={'red'} color={'red'} />;
         })}
-        <View style={{flex: 1}}></View>
+        <View style={{flex: 1}} />
         {blue.map(i => {
           return <Ball key={i} num={i} color={'blue'} />;
         })}
-        <View style={{flex: 1}}></View>
+        <View style={{flex: 1}} />
       </View>
       <View style={styles.bottom}>
         <Text>顺序:{item.lotteryUnsortDrawresult}</Text>
         {/* <Text style={styles.jine}>¥5</Text> */}
-        <Text style={styles.weimai}>¥0</Text>
+        {/* <Text style={styles.weimai}>¥0</Text> */}
       </View>
     </TouchableOpacity>
   );
 };
 
-const App = () => {
-  App.options = {
+const Draw = () => {
+  Draw.options = {
     statusBar: false,
   };
   const [selectedId, setSelectedId] = useState(null);
@@ -50,7 +52,9 @@ const App = () => {
   const [total, settotal] = useState(0);
   const [pageNo, setpageNo] = useState(1);
   const [totalPage, settotalPage] = useState(0);
+  const [isRefashing, setIsRefashing] = useState(false);
   useEffect(() => {
+    setIsRefashing(true);
     getData('start');
   }, []);
   const getData = type => {
@@ -63,7 +67,11 @@ const App = () => {
     })
       .then(res => res.json())
       .then(data => {
+        setIsRefashing(false);
         setData([...Data, ...data.data]);
+        if (type === 'start' && Data[0] && Data[0].lotteryDrawNum) {
+          changeCurrentPeriod(Data[0].lotteryDrawNum);
+        }
         settotal(data.total);
         settotalPage(data.totalPage);
         setpageNo(data.pageNo + 1);
@@ -82,7 +90,10 @@ const App = () => {
       />
     );
   };
-
+  const handleRefresh = () => {
+    setIsRefashing(true);
+    getData('start');
+  };
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar hidden={true} />
@@ -98,6 +109,14 @@ const App = () => {
           offset: 120 * index,
           index,
         })}
+        refreshControl={
+          <RefreshControl
+            refreshing={isRefashing}
+            onRefresh={() => handleRefresh()}
+            colors={['#ff0000', '#00ff00', '#0000ff', '#3ad564']}
+            progressBackgroundColor="#ffffff"
+          />
+        }
       />
     </SafeAreaView>
   );
@@ -160,5 +179,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Draw;
 // userID: 609234d5b8578f04b0cea103

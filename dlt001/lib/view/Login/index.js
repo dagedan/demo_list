@@ -13,9 +13,11 @@ const Login = ({navigation}) => {
   const [usr, setUsr] = useState('');
   const [pwd, setPwd] = useState('');
   useEffect(() => {
-    const userInfo = JSON.parse(MMKV.getString('userInfo'));
-    if (userInfo.usr) {
-      navigation.replace('MainTabs');
+    if (MMKV.getString('userInfo')) {
+      const userInfo = JSON.parse(MMKV.getString('userInfo'));
+      if (userInfo.usr) {
+        navigation.replace('MainTabs');
+      }
     }
   }, []);
   const login = () => {
@@ -31,10 +33,9 @@ const Login = ({navigation}) => {
     })
       .then(res => res.json())
       .then(data => {
-        console.log(typeof data.data, data.data);
         if (data.data) {
-          MMKV.set('userInfo', JSON.stringify(data.data));
           navigation.replace('MainTabs');
+          MMKV.set('userInfo', JSON.stringify(data.data));
           Toast.success('登陆成功');
         } else {
           Toast.fail('账号或密码错误!');

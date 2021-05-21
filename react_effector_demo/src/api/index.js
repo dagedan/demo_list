@@ -16,5 +16,5 @@ axios.interceptors.response.use(function(response) {
 })
 
 export const getlist = params => {
-  return axios.post('/api/list', params)
+  return axios.post('/api/datalist', params)
 }

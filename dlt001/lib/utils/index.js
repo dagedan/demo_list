@@ -22,15 +22,25 @@ export const zoomLevelToDiameter = zoomLevel => {
   }
 };
 
-export const calcLotteryMoney = (myNum, lotteryNum) => {
-  const redNumBingo = _.difference(
-    myNum.split(' ').slice(0, 5),
-    lotteryNum.split(' ').slice(0, 5),
-  ).length;
-  const blueNumBingo = _.difference(
-    myNum.split(' ').slice(5, 7),
-    lotteryNum.split(' ').slice(5, 7),
-  ).length;
+export const calcLotteryMoney = (myNums, lotteryNum) => {
+  if (!lotteryNum) {
+    return {
+      level: '未开奖',
+      money: '...',
+    };
+  }
+  const redNumBingo =
+    5 -
+    _.difference(
+      myNums.split(' ').slice(0, 5),
+      lotteryNum.split(' ').slice(0, 5),
+    ).length;
+  const blueNumBingo =
+    2 -
+    _.difference(
+      myNums.split(' ').slice(5, 7),
+      lotteryNum.split(' ').slice(5, 7),
+    ).length;
   if (
     (redNumBingo === 2 && blueNumBingo === 1) ||
     (redNumBingo === 3 && blueNumBingo === 0) ||
@@ -84,17 +94,55 @@ export const calcLotteryMoney = (myNum, lotteryNum) => {
   if (redNumBingo === 5 && blueNumBingo === 1) {
     return {
       level: '二等奖',
-      money: '中了二等大奖',
+      money: '100000',
     };
   }
   if (redNumBingo === 5 && blueNumBingo === 2) {
     return {
       level: '一等奖',
-      money: '中了一等大奖',
+      money: '10000000',
     };
   }
   return {
     level: '未中奖',
     money: 0,
   };
+};
+
+export const isLotteryBingo = (myNum, lotteryNum, origin) => {
+  if (!lotteryNum) {
+    return true;
+  }
+  const redOrigin = lotteryNum.split(' ').slice(0, 5);
+  const blueOrigin = lotteryNum.split(' ').slice(5, 7);
+  if (origin === 'red') {
+    return redOrigin.indexOf(myNum) === -1;
+  }
+  if (origin === 'blue') {
+    return blueOrigin.indexOf(myNum) === -1;
+  }
+};
+
+const BallFactory = len => {
+  let tmpBallList = [];
+  for (let i = 1; i <= len; i++) {
+    i < 10 ? tmpBallList.push('0' + i) : tmpBallList.push(i);
+  }
+  return tmpBallList;
+};
+export const redBall = BallFactory(35);
+export const blueBall = BallFactory(12);
+
+export const createAllPeriod = currentPeriod => {
+  let data = [];
+  const firstPeriod = parseInt(
+    new Date().getFullYear().toString().substr(2, 2) + '001',
+    10,
+  );
+  for (let i = firstPeriod; i < firstPeriod + 156; i++) {
+    if (i > currentPeriod) {
+      data.push(i);
+    }
+  }
+  return data;
 };

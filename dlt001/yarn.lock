@@ -2569,6 +2569,16 @@ ee-first@1.1.1:
   resolved "https://registry.npm.taobao.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
+effector-react@^21.3.2:
+  version "21.3.2"
+  resolved "https://registry.nlark.com/effector-react/download/effector-react-21.3.2.tgz#1ef52bf72fb304cb76e8bd1d7b75dd5f588ff661"
+  integrity sha1-HvUr9y+zBMt26L0de3XdX1iP9mE=
+
+effector@^21.8.11:
+  version "21.8.11"
+  resolved "https://registry.nlark.com/effector/download/effector-21.8.11.tgz#fbe35fb754a9918fb33781a9a408b635218ff41a"
+  integrity sha1-++Nft1SpkY+zN4GppAi2NSGP9Bo=
+
 electron-to-chromium@^1.3.723:
   version "1.3.727"
   resolved "https://registry.nlark.com/electron-to-chromium/download/electron-to-chromium-1.3.727.tgz#857e310ca00f0b75da4e1db6ff0e073cc4a91ddf"
@@ -3459,6 +3469,11 @@ image-size@^0.6.0:
   version "0.6.3"
   resolved "https://registry.npm.taobao.org/image-size/download/image-size-0.6.3.tgz#e7e5c65bb534bd7cdcedd6cb5166272a85f75fb2"
   integrity sha1-5+XGW7U0vXzc7dbLUWYnKoX3X7I=
+
+immutable@^4.0.0-rc.12:
+  version "4.0.0-rc.12"
+  resolved "https://registry.npm.taobao.org/immutable/download/immutable-4.0.0-rc.12.tgz#ca59a7e4c19ae8d9bf74a97bdf0f6e2f2a5d0217"
+  integrity sha1-ylmn5MGa6Nm/dKl73w9uLypdAhc=
 
 import-fresh@^2.0.0:
   version "2.0.0"

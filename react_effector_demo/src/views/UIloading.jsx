@@ -1,11 +1,13 @@
-import {createStore, combine, createApi, createEffect, createGate, forward} from 'effector'
-import {useStore, useGate} from 'effector-react'
+import {createEffect, forward} from 'effector'
+import {useStore, useGate, createGate} from 'effector-react'
+
 const myVerySideEffectFx = createEffect()
+
 myVerySideEffectFx.use(async () => {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve();
-    }, 1000)
+    }, 3000)
   });
   await promise;
 })
@@ -34,4 +36,5 @@ const SampleComp = () => {
     ? <Loading />
     : <ProfileForm />
 }
+
 export default SampleComp

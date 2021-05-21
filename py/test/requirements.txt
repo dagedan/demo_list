@@ -1,0 +1,6 @@
+schedule==1.1.0
+Flask_APScheduler==1.12.2
+Flask==1.1.2
+pymongo==3.11.3
+requests==2.25.1
+gunicorn

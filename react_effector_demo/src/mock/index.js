@@ -24,9 +24,10 @@ for (let i = 0; i < 26; i++) { // 可自定义生成的个数
   dataList.push(template)
 }
 // list 分页接口()
-Mock.mock('/api/list', 'post', (params) => {
+Mock.mock('/api/datalist', 'post', (params) => {
   var info = JSON.parse(params.body)
   var [index, size, total] = [info.pageNum, info.pageSize, dataList.length]
+
   var len = total / size
   var totalPages = len - parseInt(len) > 0 ? parseInt(len) + 1 : len
   var newDataList = dataList.slice(index * size, (index + 1) * size)
