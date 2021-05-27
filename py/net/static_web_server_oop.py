@@ -2,6 +2,7 @@ import socket
 import threading
 import sys
 
+
 class WebServer(object):
 	def __init__(self, port):
 		tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -25,6 +26,7 @@ class WebServer(object):
 			return
 		path = recv_data.decode('utf-8').split(" ", maxsplit=2)[1]
 		print(path)
+
 		try:
 			with open('static' + ('/index.html' if path == '/' else path), 'rb') as file:
 				file_data = file.read()
@@ -55,7 +57,6 @@ class WebServer(object):
 
 
 if __name__ == '__main__':
-	print()
 	port = sys.argv[1] if len(sys.argv) == 2 and sys.argv[1] else '9527'
 	a = WebServer(int(port))
 	a.start()
