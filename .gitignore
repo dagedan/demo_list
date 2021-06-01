@@ -1,2 +1,11 @@
 dlt/node_modules/
 dlt/ios/Pods/
+py/BookManager/__pycache__/
+py/BookManager/.idea/
+py/BookManager/.idea/
+py/BookManager/venv/
+
+py/DJModelDemo/__pycache__/
+py/DJModelDemo/.idea/
+py/DJModelDemo/.idea/
+py/DJModelDemo/venv/
